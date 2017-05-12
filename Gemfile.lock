@@ -203,7 +203,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap
+  bootstrap (~> 4.0.0.alpha5)
   byebug
   capybara (~> 2.13.0)
   factory_girl_rails
