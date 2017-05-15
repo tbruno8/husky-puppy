@@ -50,6 +50,9 @@ gem 'slim-rails'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 
 group :development, :test do
+  gem 'jshint'
+  gem 'eslint-rails'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
