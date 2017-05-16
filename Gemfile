@@ -62,6 +62,9 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'faker'
   gem 'rspec-rails'
+
+  # Ruby static code analyzer
+  gem 'rubocop', require: false
 end
 
 group :development do
