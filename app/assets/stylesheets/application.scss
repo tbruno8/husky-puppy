@@ -21,19 +21,18 @@ button.navbar-toggler.collapsed {
 }
 
 .navbar-light {
-  .navbar-brand, .navbar-toggler {
+  .navbar-brand, .navbar-toggler, .nav-link, .active {
     color: white;
   }
-  .nav-link, .active {
+  .navbar-brand:hover, .navbar-toggler:hover, .nav-link:hover, .active:hover {
+    color: white;
+  }
+  .nav-item .nav-link, .nav-item .nav-link:hover {
     color: white;
   }
 }
 
-.navbar-light:hover {
-  .navbar-brand:hover, .navbar-toggler:hover, .nav-link:hover {
-    color: white;
-  }
-  .nav-item .nav-link {
-    color: white;
-  }
+h1, h2, h3 {
+  color: #317eac;
 }
+

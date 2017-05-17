@@ -1,2 +1,11 @@
-
-.text-right This is Index page
+.sanzijing-body
+  .pagege-header#banner
+    .row
+      h2 学习三字经
+ 
+    .row
+      - if @line.empty?
+        |  Nothing to display
+      - else
+        - @line.each do |line|
+	    = line.line
