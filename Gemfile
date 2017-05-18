@@ -43,7 +43,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# Use slim 
+# Use slim
 gem 'slim-rails'
 
 # Use boostrap
