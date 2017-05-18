@@ -1,0 +1,11 @@
+.sanzijing-body
+  .pagege-header#banner
+    .text-center
+      h2 学习三字经
+ 
+    .text-center
+      - if @line.empty?
+        |  Nothing to display
+      - else
+         - @line.each do |one_line|
+           div.line[class="#{@line_color.sample}"] = one_line.line
