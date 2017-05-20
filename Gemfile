@@ -49,6 +49,9 @@ gem 'slim-rails'
 # Use boostrap
 gem 'bootstrap', '~> 4.0.0.alpha6'
 
+# Use simple_form
+gem 'simple_form'
+
 group :development, :test do
   gem 'jshint'
   gem 'eslint-rails'
