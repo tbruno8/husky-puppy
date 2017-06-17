@@ -2,7 +2,12 @@
   .pagege-header#banner
     .text-center
       h2 学习三字经
- 
+
+    table.multiselect.pull-right
+      tr.multiselect
+        td.select-line
+          = render partial: 'multiselect_each_field',
+                            locals: {options: @colors, field: 'mytest'}
     .text-center
       - if @line.empty?
         |  Nothing to display
