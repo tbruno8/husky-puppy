@@ -1,0 +1,11 @@
+.math-body
+  .pagege-header#banner
+    .text-center
+      h2 学习算术
+
+    .text-center.math
+      - (0..12).each do |m|
+        .one-exercise
+          = (5..15).to_a.sample
+          '  + #{ (5..20).to_a.sample }  =
+

@@ -1,5 +1,5 @@
 # Sanzijing controller
-class SanzijingController < ApplicationController
+class SanzijingsController < ApplicationController
   def index
     @line = Sanzijing.all
     @line_color = ['text-primary', 'text-warning', 'text-success', 'text-info',
