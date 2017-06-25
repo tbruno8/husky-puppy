@@ -1,11 +1,14 @@
 .math-body
   .pagege-header#banner
     .text-center
-      h2 学习算术
+      h1 学 习 算 术
 
     .text-center.math
-      - (0..12).each do |m|
-        .one-exercise
-          = (5..15).to_a.sample
-          '  + #{ (5..20).to_a.sample }  =
+      .col-sm-12
+      - (0..6).each do
+        .row
+          - [1..3].each do
+            .text-center.col-sm-4.one-exercise[class="#{@line_color.sample}"]
+              = (5..15).to_a.sample
+              '  + #{ (5..20).to_a.sample }  =
 

@@ -7,7 +7,10 @@
       tr.multiselect
         td.select-line
           = render partial: 'multiselect_each_field',
-                            locals: {options: @colors, field: 'mytest'}
+                            locals: {options: @line_colors, field: 'mytest'}
+        td.selected
+          .clear-all Clear All
+
     .text-center
       - if @line.empty?
         |  Nothing to display
