@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170618095146) do
+ActiveRecord::Schema.define(version: 20170625142912) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "chinese_words", force: :cascade do |t|
+    t.string "word"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "word_file_name"
+    t.string "word_content_type"
+    t.integer "word_file_size"
+    t.datetime "word_updated_at"
+  end
 
   create_table "sanzijings", force: :cascade do |t|
     t.text "line"
