@@ -12,4 +12,9 @@ Rails.application.routes.draw do
       get 'index'
     end
   end
+  resource :chinese_words do
+    collection do
+      get 'index'
+    end
+  end
 end
