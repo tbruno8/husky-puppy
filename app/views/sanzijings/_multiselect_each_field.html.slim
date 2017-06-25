@@ -1,5 +1,10 @@
-= simple_form_for :sanzijing  do |f|
-  = f.input :mytest,
+= simple_form_for :sanzijing, url: search_sanzijings_path,
+                              method: 'get',  remore:true do |f|
+  = f.input :line,
             collection: options,
-            html: { multiple: true, class: 'mytest' },
+            input_html: { multiple: true },
+            label: false
+  = f.input :section,
+            collection: options,
+            input_html: { multiple: true },
             label: false
