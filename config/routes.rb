@@ -7,6 +7,6 @@ Rails.application.routes.draw do
       get 'search'
     end
   end
-  resources :mathes
+  resources :calculates
   resources :chinese_words
 end
