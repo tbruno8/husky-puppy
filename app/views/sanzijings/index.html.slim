@@ -3,17 +3,9 @@
     .text-center
       h2 学习三字经
 
-    table.multiselect.pull-right
-      tr.multiselect
-        td.select-line
-          = render partial: 'multiselect_each_field',
-                            locals: {options: @line_colors, field: 'mytest'}
-        td.selected
-          .clear-all Clear All
-
     .text-center
       - if @line.empty?
         |  Nothing to display
       - else
          - @line.each do |one_line|
-           div.line[class="#{@line_color.sample}"] = one_line.line
+           div.line[class="#{line_color}"] = one_line.line

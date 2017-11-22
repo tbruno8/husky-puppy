@@ -1,7 +1,5 @@
-# Math controller
-class MathesController < ApplicationController
+# Calculates controller
+class CalculatesController < ApplicationController
   def index
-    @line_color = ['text-primary', 'text-warning', 'text-success', 'text-info',
-                   'text-danger']
   end
 end

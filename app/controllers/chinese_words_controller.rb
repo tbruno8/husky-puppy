@@ -1,6 +1,6 @@
 class ChineseWordsController < ApplicationController
   def index
-    @chinese_word = ChineseWord.create( chinese_word_params)
+    @chinese_word = ChineseWord.all
   end
 
   private
