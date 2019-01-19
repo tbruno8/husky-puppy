@@ -8,11 +8,15 @@ end
 ruby '2.4.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.0'
+gem 'actionpack'
+gem 'rails', '~> 5.2.0'
 
 # jQuery
 gem 'jquery-rails'
 gem 'tether-rails'
+
+gem 'libv8', '~> 5.7'
+gem 'mini_racer'
 
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
@@ -28,9 +32,6 @@ gem 'bootstrap-multiselect-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
 
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
@@ -59,7 +60,6 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'simple_form'
 
 group :development, :test do
-  gem 'jshint'
   gem 'eslint-rails'
 
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
