@@ -23,6 +23,9 @@ gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
 gem 'sass-rails' # , '~> 5.0'
 
+# Use Bootstrap multiselect
+gem 'bootstrap-multiselect-rails'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
@@ -34,6 +37,9 @@ gem 'turbolinks', '~> 5'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
+
+# For attaching images
+gem "paperclip", "~> 5.0.0"
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
@@ -48,6 +54,9 @@ gem 'slim-rails'
 
 # Use boostrap
 gem 'bootstrap', '~> 4.0.0.alpha6'
+
+# Use simple_form
+gem 'simple_form'
 
 group :development, :test do
   gem 'jshint'

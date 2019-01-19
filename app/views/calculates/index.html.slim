@@ -1,0 +1,23 @@
+.calculate-body
+  .pagege-header#banner
+    .text-center
+      h1 学 习 算 术
+
+    table.multiselect.pull-right
+      tr.multiselect
+        td.select-line
+          = render partial: 'multiselect_each_field',
+                            locals: {options: [], field: 'mytest'}
+
+    .text-center.calculate
+      .col-sm-12
+      - (0..6).each do
+        .row
+          - (1..3).each do
+            .text-center.col-sm-4.one-exercise[class="#{line_color}"]
+              = (10..50).to_a.sample
+              '  + #{ (15..25).to_a.sample }
+              /! (1..10).to_a.sample
+              /!'  + #{ (1..10).to_a.sample }
+              /!'  + #{ (5..10).to_a.sample } =
+
